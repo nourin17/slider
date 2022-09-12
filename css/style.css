@@ -1,0 +1,50 @@
+.layer{
+    position: absolute;
+    background-color: #fff;
+    bottom: -100%;
+    right: 15px;
+    left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: bottom 1s;
+}
+.item{
+    overflow: hidden;
+    cursor: pointer;
+}
+.item:hover .layer{
+    bottom: 15px;
+}
+#outerBox{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#innerBox{
+    width: 50%;
+    height: 500px;
+    background-image: url(../images/work-1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+#close{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#innerBox i{
+    font-size: 25px;
+    cursor: pointer;
+}
